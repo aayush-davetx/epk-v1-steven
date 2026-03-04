@@ -8,4 +8,8 @@
   Run `npm i` to install the dependencies.
 
   Run `npm run dev` to start the development server.
-  
+
+  ## aayush's log
+
+  - got the app to run on local host
+  - chatgpt super helpful 
