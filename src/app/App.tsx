@@ -1,6 +1,8 @@
 import { Music, Mail, Instagram, Youtube, Twitter, Download, Star, Calendar, Guitar, Heart, Flower2 } from 'lucide-react';
 import { Button } from './components/ui/button';
 import { Badge } from './components/ui/badge';
+import artistPhoto from '../assets/stevengroup.jpg'
+import portraitPhoto from '../assets/getaway-15.jpg'
 
 export default function App() {
   return (
@@ -9,7 +11,7 @@ export default function App() {
       <div className="relative h-[60vh] overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-purple-900/50 to-purple-900/90 z-10"></div>
         <img 
-          src="https://images.unsplash.com/photo-1466691008519-df7e0d26ec6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhY291c3RpYyUyMGd1aXRhciUyMGNsb3NlJTIwdXAlMjB3YXJtJTIwbGlnaHRpbmd8ZW58MXx8fHwxNzcyNTEzOTAyfDA&ixlib=rb-4.1.0&q=80&w=1080"
+          src={artistPhoto}
           alt="Steven Wang performing"
           className="w-full h-full object-cover"
         />
@@ -70,9 +72,9 @@ export default function App() {
           </div>
           <div className="order-1 md:order-2">
             <img 
-              src="https://images.unsplash.com/photo-1686651312514-ebaa0a9f3736?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRpZSUyMGZvbGslMjBtdXNpY2lhbiUyMHBvcnRyYWl0JTIwZW1vdGlvbmFsfGVufDF8fHx8MTc3MjUxMzkwMnww&ixlib=rb-4.1.0&q=80&w=1080"
+              src={portraitPhoto}
               alt="Steven Wang portrait"
-              className="w-full h-[400px] object-cover rounded-3xl shadow-2xl"
+              className="w-full h-[400px] object-cover object-[50%_30%] rounded-3xl shadow-2xl"
             />
           </div>
         </div>
