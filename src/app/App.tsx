@@ -106,50 +106,81 @@ export default function App() {
         <div className="mb-16">
           <h2 className="text-4xl mb-8 text-purple-900 text-center">Featured Songs</h2>
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-white rounded-2xl p-8 shadow-lg border-4 border-purple-200 relative hover:border-purple-300 transition-colors">
-              <Heart className="absolute -top-4 -right-4 w-8 h-8 text-purple-500 fill-purple-500" />
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-4 border-purple-200 relative hover:border-purple-300 transition-colors">
+            <Heart className="absolute -top-4 -right-4 w-8 h-8 text-purple-900 fill-purple-900" />
+            
+            <div className="flex items-center gap-3 mb-4">
+              <div className="bg-purple-200 p-3 rounded-full">
+                <Guitar className="w-6 h-6 text-purple-600" />
+              </div>
+
+              <div>
+                <h3 className="text-xl text-slate-800">Blueberry Bagels</h3>
+                <p className="text-sm text-gray-500">2025</p>
+              </div>
+            </div>
+
+            <p className="text-gray-600 text-sm italic">
+              "A haunting reflection on love lost, with a melody that lingers like blueberries on the tongue."
+            </p>
+
+            <iframe
+              src="https://open.spotify.com/embed/track/1kBpkI7t7pcZDuHOBYFE0D?si=2752e45b2a934fd6"
+              width="100%"
+              height="152"
+              frameBorder="0"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+              className="rounded-lg mt-2"
+            ></iframe>
+          </div>
+              <div className="bg-white rounded-2xl p-8 shadow-lg border-4 border-rose-200 relative hover:border-rose-300 transition-colors">
+                <Heart className="absolute -top-4 -right-4 w-8 h-8 text-rose-500 fill-rose-500" />
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="bg-rose-100 p-3 rounded-full">
+                    <Guitar className="w-6 h-6 text-rose-600" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl text-slate-800">Out Of My Mind</h3>
+                    <p className="text-sm text-gray-500">2025</p>
+                  </div>
+                </div>
+                <p className="text-gray-600 text-sm italic">
+                  "An ode to those who make an impression on our hearts and never leave the mind."
+                </p>
+                <iframe
+                  src="https://open.spotify.com/embed/track/4AXv1iaYIjbmchGa37v9Xa?si=31a6487a690e4251"
+                  width="100%"
+                  height="152"
+                  frameBorder="0"
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                  loading="lazy"
+                  className="rounded-lg mt-2"
+                ></iframe>
+              </div>
+            <div className="bg-white rounded-2xl p-8 shadow-lg border-4 border-blue-200 relative hover:border-blue-300 transition-colors">
+              <Heart className="absolute -top-4 -right-4 w-8 h-8 text-blue-500 fill-blue-500" />
               <div className="flex items-center gap-3 mb-4">
-                <div className="bg-purple-100 p-3 rounded-full">
-                  <Guitar className="w-6 h-6 text-purple-600" />
+                <div className="bg-blue-100 p-3 rounded-full">
+                  <Guitar className="w-6 h-6 text-blue-600" />
                 </div>
                 <div>
-                  <h3 className="text-xl text-slate-800">What If We Stayed</h3>
+                  <h3 className="text-xl text-slate-800">Say You Want Me Too</h3>
                   <p className="text-sm text-gray-500">2025</p>
                 </div>
-              </div>
+              </div> 
               <p className="text-gray-600 text-sm italic">
-                "A haunting reflection on choices unmade and paths untaken."
+                "A cauldron of emotion that simmers with passion and regret."
               </p>
-            </div>
-            <div className="bg-white rounded-2xl p-8 shadow-lg border-4 border-rose-200 relative hover:border-rose-300 transition-colors">
-              <Heart className="absolute -top-4 -right-4 w-8 h-8 text-rose-500 fill-rose-500" />
-              <div className="flex items-center gap-3 mb-4">
-                <div className="bg-rose-100 p-3 rounded-full">
-                  <Guitar className="w-6 h-6 text-rose-600" />
-                </div>
-                <div>
-                  <h3 className="text-xl text-slate-800">October Rain</h3>
-                  <p className="text-sm text-gray-500">2024</p>
-                </div>
-              </div>
-              <p className="text-gray-600 text-sm italic">
-                "The song that started it all—a bittersweet goodbye to first love."
-              </p>
-            </div>
-            <div className="bg-white rounded-2xl p-8 shadow-lg border-4 border-violet-200 relative hover:border-violet-300 transition-colors">
-              <Heart className="absolute -top-4 -right-4 w-8 h-8 text-violet-500 fill-violet-500" />
-              <div className="flex items-center gap-3 mb-4">
-                <div className="bg-violet-100 p-3 rounded-full">
-                  <Guitar className="w-6 h-6 text-violet-600" />
-                </div>
-                <div>
-                  <h3 className="text-xl text-slate-800">Parallel Universe</h3>
-                  <p className="text-sm text-gray-500">2026</p>
-                </div>
-              </div>
-              <p className="text-gray-600 text-sm italic">
-                "Imagining a world where we found our way back to each other."
-              </p>
+              <iframe
+                src="https://open.spotify.com/embed/track/0brEZHYCJJSql0jqXbFTPi?si=d0ff310735ca47dc"
+                width="100%"
+                height="152"
+                frameBorder="0"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+                className="rounded-lg mt-2"
+              ></iframe>
             </div>
           </div>
         </div>
