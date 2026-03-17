@@ -3,6 +3,8 @@ import { Button } from './components/ui/button';
 import { Badge } from './components/ui/badge';
 import artistPhoto from '../assets/stevengroup.jpg'
 import portraitPhoto from '../assets/getaway-15.jpg'
+import birthdayPhoto from '../assets/birthday-photo.jpg'
+import fingerPhoto from '../assets/fingerpoint.jpg'
 
 export default function App() {
   return (
@@ -192,23 +194,23 @@ export default function App() {
             <div className="bg-white rounded-2xl p-8 shadow-lg border-l-4 border-purple-400">
               <Star className="w-8 h-8 text-purple-500 fill-purple-500 mb-4" />
               <p className="text-gray-700 mb-4 italic">
-                "Steven Wang's raw vulnerability and acoustic mastery create something truly special. A must-listen."
+                "Steven's vulnerability and emotional storytelling enchanted our wedding day beyond our wildest dreams."
               </p>
-              <div className="text-purple-600">— Rolling Stone</div>
+              <div className="text-purple-600">— Surayut & Quyyen's Wedding</div>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-lg border-l-4 border-rose-400">
               <Star className="w-8 h-8 text-rose-500 fill-rose-500 mb-4" />
               <p className="text-gray-700 mb-4 italic">
-                "His songs about lost love cut straight to the heart. Beautiful and devastating in equal measure."
+                "Steven's captivating vocals, tasteful song selection, and infectious passion made his birthday performance unforgettable."
               </p>
-              <div className="text-rose-600">— NPR Music</div>
+              <div className="text-rose-600">— CJ Tuloza's Birthday</div>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-lg border-l-4 border-violet-400">
               <Star className="w-8 h-8 text-violet-500 fill-violet-500 mb-4" />
               <p className="text-gray-700 mb-4 italic">
-                "The kind of songwriter that makes you feel everything. His guitar work is impeccable."
+                "It's a no-brainer to book Steven for our residents because of his professionalism and uncanny ability to thrill audiences."
               </p>
-              <div className="text-violet-600">— Indie Folk Central</div>
+              <div className="text-violet-600">— Theory U District</div>
             </div>
           </div>
         </div>
@@ -218,14 +220,14 @@ export default function App() {
           <h2 className="text-4xl mb-8 text-slate-800">Recent Performances</h2>
           <div className="relative rounded-3xl overflow-hidden shadow-2xl">
             <img 
-              src="https://images.unsplash.com/photo-1769755013915-c41fd56518d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYWxlJTIwc2luZ2VyJTIwYWNvdXN0aWMlMjBndWl0YXIlMjBwZXJmb3JtaW5nfGVufDF8fHx8MTc3MjUxMzkwMnww&ixlib=rb-4.1.0&q=80&w=1080"
+              src={birthdayPhoto}
               alt="Live performance"
-              className="w-full h-[400px] object-cover"
+              className="w-full h-[400px] object-cover object-[50%_30%]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-8">
               <div>
-                <h3 className="text-white text-3xl mb-2">The Troubadour • Sold Out</h3>
-                <p className="text-white/90 text-lg">Los Angeles, CA • February 14, 2026</p>
+                <h3 className="text-white text-3xl mb-2">CJ's Birthday</h3>
+                <p className="text-white/90 text-lg">Seattle, WA • October 26, 2025</p>
               </div>
             </div>
           </div>
@@ -235,9 +237,9 @@ export default function App() {
         <div className="mb-16">
           <div className="relative rounded-3xl overflow-hidden shadow-2xl">
             <img 
-              src="https://images.unsplash.com/photo-1758715524160-30b78fe62545?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhY291c3RpYyUyMGd1aXRhciUyMGNsb3NlJTIwdXAlMjB3YXJtJTIwbGlnaHRpbmd8ZW58MXx8fHwxNzcyNTEzOTAyfDA&ixlib=rb-4.1.0&q=80&w=1080"
-              alt="Acoustic guitar"
-              className="w-full h-[300px] object-cover"
+              src={fingerPhoto}
+              alt="Pointing at the crowd"
+              className="w-full h-[300px] object-cover object-[50%_30%]"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent flex items-center p-12">
               <div className="text-white max-w-2xl">
@@ -250,7 +252,8 @@ export default function App() {
           </div>
         </div>
 
-        {/* Upcoming Shows */}
+{/*
+        **Upcoming Shows - COMMENTED OUT FOR NOW**
         <div className="mb-16">
           <h2 className="text-4xl mb-8 text-slate-800">Upcoming Shows</h2>
           <div className="bg-white rounded-3xl shadow-lg p-8">
@@ -281,22 +284,22 @@ export default function App() {
               ))}
             </div>
           </div>
-        </div>
+        </div>  */}
 
         {/* Contact Section */}
         <div className="bg-gradient-to-r from-purple-600 via-violet-600 to-rose-600 rounded-3xl p-12 text-white text-center">
-          <h2 className="text-4xl mb-4">Get in Touch</h2>
-          <p className="text-xl mb-8 opacity-90">For booking inquiries and press opportunities</p>
+          <h2 className="text-4xl mb-4">Book Steven For Your Special Day!</h2>
+          <p className="text-xl mb-8 opacity-90">For booking inquiries, contact us over Email or Instagram DM.</p>
           
           <div className="flex flex-wrap justify-center gap-6 mb-8">
             <Button className="bg-white text-slate-700 hover:bg-gray-100 gap-2">
               <Mail className="w-5 h-5" />
-              booking@stevenwang.com
+              stevenwang8801@gmail.com
             </Button>
-            <Button className="bg-white text-slate-700 hover:bg-gray-100 gap-2">
+            {/* <Button className="bg-white text-slate-700 hover:bg-gray-100 gap-2">
               <Download className="w-5 h-5" />
               Download EPK
-            </Button>
+            </Button> */}
           </div>
 
           <div className="flex justify-center gap-6">
