@@ -291,7 +291,25 @@ export default function App() {
           <h2 className="text-4xl mb-4">Book Steven For Your Special Day!</h2>
           <p className="text-xl mb-8 opacity-90">For booking inquiries, contact us over Email or Instagram DM.</p>
           
-          <div className="flex flex-wrap justify-center gap-6 mb-8">
+          <div className="flex flex-wrap justify-center items-center gap-4 mb-8">
+  
+            <div className="flex items-center gap-2 bg-white text-slate-700 px-4 py-2 rounded-md text-sm font-medium shadow-sm border border-gray-200 select-text">
+              <Mail className="w-5 h-5" />
+              <span className="select-text">stevenwang8801@gmail.com</span>
+            </div>
+
+          </div>
+          {/* <div className="flex flex-wrap justify-center gap-6 mb-8">
+            <a
+              href="mailto:stevenwang8801@gmail.com?subject=Booking Inquiry"
+              className="flex items-center gap-2 bg-white text-slate-700 hover:bg-gray-100 px-4 py-2 rounded-md shadow select-text cursor-text"
+            >
+              <Mail className="w-5 h-5" />
+              <span className="select-text">stevenwang8801@gmail.com</span>
+            </a>
+          </div> */}
+
+          {/* <div className="flex flex-wrap justify-center gap-6 mb-8">
             <Button className="bg-white text-slate-700 hover:bg-gray-100 gap-2">
               <Mail className="w-5 h-5" />
               stevenwang8801@gmail.com
@@ -299,8 +317,8 @@ export default function App() {
             {/* <Button className="bg-white text-slate-700 hover:bg-gray-100 gap-2">
               <Download className="w-5 h-5" />
               Download EPK
-            </Button> */}
-          </div>
+            </Button> 
+          </div> */}
 
           <div className="flex justify-center gap-6">
             <a href="https://www.instagram.com/steventhewang?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className="bg-white/20 hover:bg-white/30 rounded-full p-4 transition-colors">
