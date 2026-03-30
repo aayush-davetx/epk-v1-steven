@@ -5,6 +5,7 @@ import artistPhoto from '../assets/stevengroup.jpg'
 import portraitPhoto from '../assets/getaway-15.jpg'
 import birthdayPhoto from '../assets/birthday-photo.jpg'
 import fingerPhoto from '../assets/fingerpoint.jpg'
+import testAudio from '../assets/audio/test.mp3'
 
 export default function App() {
   return (
@@ -108,7 +109,69 @@ export default function App() {
         <div className="mb-16">
           <h2 className="text-4xl mb-8 text-purple-900 text-center">Featured Songs</h2>
           <div className="grid md:grid-cols-3 gap-6">
-          <div className="bg-white rounded-2xl p-8 shadow-lg border-4 border-purple-200 relative hover:border-purple-300 transition-colors">
+          <div className="bg-white rounded-2xl shadow-lg border-4 border-purple-200 relative hover:border-purple-300 transition-colors overflow-hidden">
+            <Heart className="absolute top-4 right-4 w-8 h-8 text-purple-900 fill-purple-900 z-10" />
+
+            {/* Cover Art */}
+            <img
+              src={fingerPhoto} // import this like your other images
+              alt="Blueberry Bagels cover art"
+              className="w-full h-48 object-cover"
+            />
+
+            <div className="p-8">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="bg-purple-200 p-3 rounded-full">
+                  <Guitar className="w-6 h-6 text-purple-600" />
+                </div>
+
+                <div>
+                  <h3 className="text-xl text-slate-800">Blueberry Bagels</h3>
+                  <p className="text-sm text-gray-500">2025</p>
+                </div>
+              </div>
+
+              <p className="text-gray-600 text-sm italic mb-6">
+                "A haunting reflection on love lost, with a melody that lingers like blueberries on the tongue."
+              </p>
+
+              <audio controls className="w-full mt-4">
+                <source src={testAudio} type="audio/mpeg" />
+                Your browser does not support the audio element.
+              </audio>
+
+              {/* Platform Links */}
+              <div className="flex flex-wrap gap-3">
+                <a
+                  href="https://open.spotify.com/track/1kBpkI7t7pcZDuHOBYFE0D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3 py-1.5 bg-green-500 text-white rounded-full text-sm font-medium hover:bg-green-600 transition"
+                >
+                  Spotify
+                </a>
+
+                <a
+                  href="https://music.apple.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3 py-1.5 bg-black text-white rounded-full text-sm font-medium hover:bg-gray-900 transition"
+                >
+                  Apple Music
+                </a>
+
+                <a
+                  href="https://youtube.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3 py-1.5 bg-red-500 text-white rounded-full text-sm font-medium hover:bg-red-600 transition"
+                >
+                  YouTube
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* <div className="bg-white rounded-2xl p-8 shadow-lg border-4 border-purple-200 relative hover:border-purple-300 transition-colors">
             <Heart className="absolute -top-4 -right-4 w-8 h-8 text-purple-900 fill-purple-900" />
             
             <div className="flex items-center gap-3 mb-4">
@@ -135,7 +198,7 @@ export default function App() {
               loading="lazy"
               className="rounded-lg mt-2"
             ></iframe>
-          </div>
+          </div> */}
               <div className="bg-white rounded-2xl p-8 shadow-lg border-4 border-rose-200 relative hover:border-rose-300 transition-colors">
                 <Heart className="absolute -top-4 -right-4 w-8 h-8 text-rose-500 fill-rose-500" />
                 <div className="flex items-center gap-3 mb-4">
