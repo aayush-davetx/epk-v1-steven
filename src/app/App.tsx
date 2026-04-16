@@ -171,59 +171,131 @@ export default function App() {
               </div>
             </div>
           </div>
-          {/* <div className="bg-white rounded-2xl p-8 shadow-lg border-4 border-purple-200 relative hover:border-purple-300 transition-colors">
-            <Heart className="absolute -top-4 -right-4 w-8 h-8 text-purple-900 fill-purple-900" />
-            
-            <div className="flex items-center gap-3 mb-4">
-              <div className="bg-purple-200 p-3 rounded-full">
-                <Guitar className="w-6 h-6 text-purple-600" />
+          <div className="bg-white rounded-2xl shadow-lg border-4 border-purple-200 relative hover:border-purple-300 transition-colors overflow-hidden">
+            <Heart className="absolute top-4 right-4 w-8 h-8 text-purple-900 fill-purple-900 z-10" />
+
+            {/* Cover Art */}
+            <img
+              src={fingerPhoto} // import this like your other images
+              alt="Blueberry Bagels cover art"
+              className="w-full h-48 object-cover"
+            />
+
+            <div className="p-8">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="bg-purple-200 p-3 rounded-full">
+                  <Guitar className="w-6 h-6 text-purple-600" />
+                </div>
+
+                <div>
+                  <h3 className="text-xl text-slate-800">Blueberry Bagels</h3>
+                  <p className="text-sm text-gray-500">2025</p>
+                </div>
               </div>
 
-              <div>
-                <h3 className="text-xl text-slate-800">Blueberry Bagels</h3>
-                <p className="text-sm text-gray-500">2025</p>
+              <p className="text-gray-600 text-sm italic mb-6">
+                "A haunting reflection on love lost, with a melody that lingers like blueberries on the tongue."
+              </p>
+
+              <audio controls className="w-full mt-4">
+                <source src={testAudio} type="audio/mpeg" />
+                Your browser does not support the audio element.
+              </audio>
+
+              {/* Platform Links */}
+              <div className="flex flex-wrap gap-3">
+                <a
+                  href="https://open.spotify.com/track/1kBpkI7t7pcZDuHOBYFE0D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3 py-1.5 bg-green-500 text-white rounded-full text-sm font-medium hover:bg-green-600 transition"
+                >
+                  Spotify
+                </a>
+
+                <a
+                  href="https://music.apple.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3 py-1.5 bg-black text-white rounded-full text-sm font-medium hover:bg-gray-900 transition"
+                >
+                  Apple Music
+                </a>
+
+                <a
+                  href="https://youtube.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3 py-1.5 bg-red-500 text-white rounded-full text-sm font-medium hover:bg-red-600 transition"
+                >
+                  YouTube
+                </a>
               </div>
             </div>
+          </div>
+          <div className="bg-white rounded-2xl shadow-lg border-4 border-purple-200 relative hover:border-purple-300 transition-colors overflow-hidden">
+            <Heart className="absolute top-4 right-4 w-8 h-8 text-purple-900 fill-purple-900 z-10" />
 
-            <p className="text-gray-600 text-sm italic">
-              "A haunting reflection on love lost, with a melody that lingers like blueberries on the tongue."
-            </p>
+            {/* Cover Art */}
+            <img
+              src={fingerPhoto} // import this like your other images
+              alt="Blueberry Bagels cover art"
+              className="w-full h-48 object-cover"
+            />
 
-            <iframe
-              src="https://open.spotify.com/embed/track/1kBpkI7t7pcZDuHOBYFE0D?si=2752e45b2a934fd6"
-              width="100%"
-              height="152"
-              frameBorder="0"
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              loading="lazy"
-              className="rounded-lg mt-2"
-            ></iframe>
-          </div> */}
-              <div className="bg-white rounded-2xl p-8 shadow-lg border-4 border-rose-200 relative hover:border-rose-300 transition-colors">
-                <Heart className="absolute -top-4 -right-4 w-8 h-8 text-rose-500 fill-rose-500" />
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="bg-rose-100 p-3 rounded-full">
-                    <Guitar className="w-6 h-6 text-rose-600" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl text-slate-800">Out Of My Mind</h3>
-                    <p className="text-sm text-gray-500">2025</p>
-                  </div>
+            <div className="p-8">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="bg-purple-200 p-3 rounded-full">
+                  <Guitar className="w-6 h-6 text-purple-600" />
                 </div>
-                <p className="text-gray-600 text-sm italic">
-                  "An ode to those who make an impression on our hearts and never leave the mind."
-                </p>
-                <iframe
-                  src="https://open.spotify.com/embed/track/4AXv1iaYIjbmchGa37v9Xa?si=31a6487a690e4251"
-                  width="100%"
-                  height="152"
-                  frameBorder="0"
-                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                  loading="lazy"
-                  className="rounded-lg mt-2"
-                ></iframe>
+
+                <div>
+                  <h3 className="text-xl text-slate-800">Blueberry Bagels</h3>
+                  <p className="text-sm text-gray-500">2025</p>
+                </div>
               </div>
-            <div className="bg-white rounded-2xl p-8 shadow-lg border-4 border-blue-200 relative hover:border-blue-300 transition-colors">
+
+              <p className="text-gray-600 text-sm italic mb-6">
+                "A haunting reflection on love lost, with a melody that lingers like blueberries on the tongue."
+              </p>
+
+              <audio controls className="w-full mt-4">
+                <source src={testAudio} type="audio/mpeg" />
+                Your browser does not support the audio element.
+              </audio>
+
+              {/* Platform Links */}
+              <div className="flex flex-wrap gap-3">
+                <a
+                  href="https://open.spotify.com/track/1kBpkI7t7pcZDuHOBYFE0D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3 py-1.5 bg-green-500 text-white rounded-full text-sm font-medium hover:bg-green-600 transition"
+                >
+                  Spotify
+                </a>
+
+                <a
+                  href="https://music.apple.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3 py-1.5 bg-black text-white rounded-full text-sm font-medium hover:bg-gray-900 transition"
+                >
+                  Apple Music
+                </a>
+
+                <a
+                  href="https://youtube.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3 py-1.5 bg-red-500 text-white rounded-full text-sm font-medium hover:bg-red-600 transition"
+                >
+                  YouTube
+                </a>
+              </div>
+            </div>
+          </div>
+            {/* <div className="bg-white rounded-2xl p-8 shadow-lg border-4 border-blue-200 relative hover:border-blue-300 transition-colors">
               <Heart className="absolute -top-4 -right-4 w-8 h-8 text-blue-500 fill-blue-500" />
               <div className="flex items-center gap-3 mb-4">
                 <div className="bg-blue-100 p-3 rounded-full">
@@ -246,7 +318,7 @@ export default function App() {
                 loading="lazy"
                 className="rounded-lg mt-2"
               ></iframe>
-            </div>
+            </div> */}
           </div>
         </div>
 
