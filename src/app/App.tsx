@@ -7,6 +7,24 @@ import birthdayPhoto from '../assets/birthday-photo.jpg'
 import fingerPhoto from '../assets/fingerpoint.jpg'
 import testAudio from '../assets/audio/test.mp3'
 
+const images = [
+  "https://images.unsplash.com/photo-1745929201281-26b5f874a0d1?...",
+  "https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
+  "https://images.unsplash.com/photo-1490750967868-88aa4486c946"
+];
+
+import { useState, useEffect } from "react";
+
+const [currentIndex, setCurrentIndex] = useState(0);
+
+useEffect(() => {
+  const interval = setInterval(() => {
+    setCurrentIndex((prev) => (prev + 1) % images.length);
+  }, 4000); // change every 4s
+
+  return () => clearInterval(interval);
+}, []);
+
 export default function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-rose-50 to-violet-50">
