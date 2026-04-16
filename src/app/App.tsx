@@ -6,26 +6,26 @@ import portraitPhoto from '../assets/getaway-15.jpg'
 import birthdayPhoto from '../assets/birthday-photo.jpg'
 import fingerPhoto from '../assets/fingerpoint.jpg'
 import testAudio from '../assets/audio/test.mp3'
+import { useState, useEffect } from "react";
 
-const images = [
+export default function App() {
+
+  const images = [
   "https://images.unsplash.com/photo-1745929201281-26b5f874a0d1?...",
   "https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
   "https://images.unsplash.com/photo-1490750967868-88aa4486c946"
-];
+  ];
 
-import { useState, useEffect } from "react";
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-const [currentIndex, setCurrentIndex] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % images.length);
+    }, 4000); // change every 4s
 
-useEffect(() => {
-  const interval = setInterval(() => {
-    setCurrentIndex((prev) => (prev + 1) % images.length);
-  }, 4000); // change every 4s
+    return () => clearInterval(interval);
+  }, []);
 
-  return () => clearInterval(interval);
-}, []);
-
-export default function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-rose-50 to-violet-50">
       {/* Hero Section */}
@@ -100,8 +100,43 @@ export default function App() {
           </div>
         </div>
 
-        {/* UW Connection & Flowers Section */}
+        {/* Carousel Section*/} 
         <div className="mb-16">
+          <div className="relative flex items-center justify-center h-[400px] overflow-hidden">
+
+            {images.map((img, index) => {
+              const position = (index - currentIndex + images.length) % images.length;
+
+              let className = "absolute transition-all duration-700 ease-in-out";
+
+              if (position === 0) {
+                // center
+                className += " z-20 scale-100 opacity-100";
+              } else if (position === 1) {
+                // right
+                className += " z-10 translate-x-[260px] scale-75 opacity-60";
+              } else if (position === images.length - 1) {
+                // left
+                className += " z-10 -translate-x-[260px] scale-75 opacity-60";
+              } else {
+                // hidden
+                className += " opacity-0 scale-50";
+              }
+
+              return (
+                <img
+                  key={index}
+                  src={img}
+                  className={`${className} w-[380px] h-[250px] object-cover rounded-2xl shadow-xl`}
+                />
+              );
+            })}
+
+          </div>
+        </div>
+
+        {/* UW Connection & Flowers Section */}
+        {/* <div className="mb-16">
           <div className="relative rounded-3xl overflow-hidden shadow-2xl">
             <img 
               src="https://images.unsplash.com/photo-1745929201281-26b5f874a0d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwdXJwbGUlMjBmbG93ZXJzJTIwYm91cXVldCUyMGNsb3NlJTIwdXB8ZW58MXx8fHwxNzcyNTE0NTAzfDA&ixlib=rb-4.1.0&q=80&w=1080"
@@ -121,7 +156,7 @@ export default function App() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Featured Songs Section */}
         <div className="mb-16">
