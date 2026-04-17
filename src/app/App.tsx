@@ -13,6 +13,8 @@ export default function App() {
   const images = [
   "https://images.unsplash.com/photo-1745929201281-26b5f874a0d1?...",
   "https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
+  "https://images.unsplash.com/photo-1490750967868-88aa4486c946",
+  "https://images.unsplash.com/photo-1490750967868-88aa4486c946",
   "https://images.unsplash.com/photo-1490750967868-88aa4486c946"
   ];
 
