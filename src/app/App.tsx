@@ -111,13 +111,19 @@ export default function App() {
 
               if (position === 0) {
                 // center
-                className += " z-20 scale-100 opacity-100";
+                className += " z-30 scale-100 opacity-100";
               } else if (position === 1) {
                 // right
-                className += " z-10 translate-x-[260px] scale-75 opacity-60";
+                className += " z-20 translate-x-[260px] scale-80 opacity-80";
+              } else if (position === 2) {
+                // far right
+                className += " z-10 translate-x-[520px] scale-60 opacity-50";
               } else if (position === images.length - 1) {
                 // left
-                className += " z-10 -translate-x-[260px] scale-75 opacity-60";
+                className += " z-20 -translate-x-[260px] scale-80 opacity-80";
+              } else if (position === images.length - 2) {
+                // far left
+                className += " z-10 -translate-x-[520px] scale-60 opacity-50";
               } else {
                 // hidden
                 className += " opacity-0 scale-50";
