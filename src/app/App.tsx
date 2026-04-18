@@ -177,243 +177,211 @@ export default function App() {
           </div>
         </div>
 
-        {/* UW Connection & Flowers Section */}
-        {/* <div className="mb-16">
-          <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-            <img 
-              src="https://images.unsplash.com/photo-1745929201281-26b5f874a0d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwdXJwbGUlMjBmbG93ZXJzJTIwYm91cXVldCUyMGNsb3NlJTIwdXB8ZW58MXx8fHwxNzcyNTE0NTAzfDA&ixlib=rb-4.1.0&q=80&w=1080"
-              alt="Purple flowers"
-              className="w-full h-[300px] object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-purple-900/90 to-transparent flex items-center p-12">
-              <div className="text-white max-w-2xl">
-                <div className="flex items-center gap-3 mb-4">
-                  <Flower2 className="w-10 h-10" />
-                  <h3 className="text-3xl">Purple & Gold</h3>
-                </div>
-                <p className="text-xl mb-2">
-                  From the halls of the University of Washington to intimate venues across the country, 
-                  Steven brings his Husky pride and acapella roots to every performance.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div> */}
-
         {/* Featured Songs Section */}
         <div className="mb-16">
-          <h2 className="text-4xl mb-8 text-purple-900 text-center">Featured Songs</h2>
+          <h2 className="text-4xl mb-8 text-stone-800 text-center">Featured Songs</h2>
           <div className="grid md:grid-cols-3 gap-6">
-          <div className="bg-white rounded-2xl shadow-lg border-4 border-purple-200 relative hover:border-purple-300 transition-colors overflow-hidden">
-            <Heart className="absolute top-4 right-4 w-8 h-8 text-purple-900 fill-purple-900 z-10" />
+            <div className="bg-stone-50 rounded-2xl shadow-lg border border-stone-200 relative hover:border-stone-300 transition-colors overflow-hidden">
+    
+              <Heart className="absolute top-4 right-4 w-8 h-8 text-stone-700 fill-stone-700 z-10" />
 
-            {/* Cover Art */}
-            <img
-              src={fingerPhoto} // import this like your other images
-              alt="Blueberry Bagels cover art"
-              className="w-full h-48 object-cover"
-            />
+              {/* Cover Art */}
+              <img
+                src={fingerPhoto}
+                alt="Blueberry Bagels cover art"
+                className="w-full h-48 object-cover"
+              />
 
-            <div className="p-8">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="bg-purple-200 p-3 rounded-full">
-                  <Guitar className="w-6 h-6 text-purple-600" />
+              <div className="p-8">
+
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="bg-green-100 p-3 rounded-full">
+                    <Guitar className="w-6 h-6 text-green-700" />
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl text-stone-800">Blueberry Bagels</h3>
+                    <p className="text-sm text-stone-500">2025</p>
+                  </div>
                 </div>
 
-                <div>
-                  <h3 className="text-xl text-slate-800">Blueberry Bagels</h3>
-                  <p className="text-sm text-gray-500">2025</p>
-                </div>
-              </div>
+                <p className="text-stone-600 text-sm italic mb-6">
+                  "A haunting reflection on love lost, with a melody that lingers like blueberries on the tongue."
+                </p>
 
-              <p className="text-gray-600 text-sm italic mb-6">
-                "A haunting reflection on love lost, with a melody that lingers like blueberries on the tongue."
-              </p>
+                <audio controls preload="none" className="w-full mt-4">
+                  <source src={testAudio} type="audio/mpeg" />
+                  Your browser does not support the audio element.
+                </audio>
 
-              <audio controls className="w-full mt-4">
-                <source src={testAudio} type="audio/mpeg" />
-                Your browser does not support the audio element.
-              </audio>
+                {/* Platform Links */}
+                <div className="flex flex-wrap gap-3 mt-4">
+                  
+                  <a
+                    href="https://open.spotify.com/track/1kBpkI7t7pcZDuHOBYFE0D"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-3 py-1.5 bg-green-500/90 text-white rounded-full text-sm font-medium hover:bg-green-600 transition"
+                  >
+                    Spotify
+                  </a>
 
-              {/* Platform Links */}
-              <div className="flex flex-wrap gap-3">
-                <a
-                  href="https://open.spotify.com/track/1kBpkI7t7pcZDuHOBYFE0D"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-3 py-1.5 bg-green-500 text-white rounded-full text-sm font-medium hover:bg-green-600 transition"
-                >
-                  Spotify
-                </a>
+                  <a
+                    href="https://music.apple.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-3 py-1.5 bg-stone-800 text-white rounded-full text-sm font-medium hover:bg-stone-900 transition"
+                  >
+                    Apple Music
+                  </a>
 
-                <a
-                  href="https://music.apple.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-3 py-1.5 bg-black text-white rounded-full text-sm font-medium hover:bg-gray-900 transition"
-                >
-                  Apple Music
-                </a>
+                  <a
+                    href="https://youtube.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-3 py-1.5 bg-red-500/90 text-white rounded-full text-sm font-medium hover:bg-red-600 transition"
+                  >
+                    YouTube
+                  </a>
 
-                <a
-                  href="https://youtube.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-3 py-1.5 bg-red-500 text-white rounded-full text-sm font-medium hover:bg-red-600 transition"
-                >
-                  YouTube
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="bg-white rounded-2xl shadow-lg border-4 border-purple-200 relative hover:border-purple-300 transition-colors overflow-hidden">
-            <Heart className="absolute top-4 right-4 w-8 h-8 text-purple-900 fill-purple-900 z-10" />
-
-            {/* Cover Art */}
-            <img
-              src={fingerPhoto} // import this like your other images
-              alt="Blueberry Bagels cover art"
-              className="w-full h-48 object-cover"
-            />
-
-            <div className="p-8">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="bg-purple-200 p-3 rounded-full">
-                  <Guitar className="w-6 h-6 text-purple-600" />
                 </div>
 
-                <div>
-                  <h3 className="text-xl text-slate-800">Blueberry Bagels</h3>
-                  <p className="text-sm text-gray-500">2025</p>
-                </div>
-              </div>
-
-              <p className="text-gray-600 text-sm italic mb-6">
-                "A haunting reflection on love lost, with a melody that lingers like blueberries on the tongue."
-              </p>
-
-              <audio controls className="w-full mt-4">
-                <source src={testAudio} type="audio/mpeg" />
-                Your browser does not support the audio element.
-              </audio>
-
-              {/* Platform Links */}
-              <div className="flex flex-wrap gap-3">
-                <a
-                  href="https://open.spotify.com/track/1kBpkI7t7pcZDuHOBYFE0D"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-3 py-1.5 bg-green-500 text-white rounded-full text-sm font-medium hover:bg-green-600 transition"
-                >
-                  Spotify
-                </a>
-
-                <a
-                  href="https://music.apple.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-3 py-1.5 bg-black text-white rounded-full text-sm font-medium hover:bg-gray-900 transition"
-                >
-                  Apple Music
-                </a>
-
-                <a
-                  href="https://youtube.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-3 py-1.5 bg-red-500 text-white rounded-full text-sm font-medium hover:bg-red-600 transition"
-                >
-                  YouTube
-                </a>
               </div>
             </div>
-          </div>
-          <div className="bg-white rounded-2xl shadow-lg border-4 border-purple-200 relative hover:border-purple-300 transition-colors overflow-hidden">
-            <Heart className="absolute top-4 right-4 w-8 h-8 text-purple-900 fill-purple-900 z-10" />
+            <div className="bg-stone-50 rounded-2xl shadow-lg border border-stone-200 relative hover:border-stone-300 transition-colors overflow-hidden">
+    
+              <Heart className="absolute top-4 right-4 w-8 h-8 text-stone-700 fill-stone-700 z-10" />
 
-            {/* Cover Art */}
-            <img
-              src={fingerPhoto} // import this like your other images
-              alt="Blueberry Bagels cover art"
-              className="w-full h-48 object-cover"
-            />
+              {/* Cover Art */}
+              <img
+                src={fingerPhoto}
+                alt="Blueberry Bagels cover art"
+                className="w-full h-48 object-cover"
+              />
 
-            <div className="p-8">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="bg-purple-200 p-3 rounded-full">
-                  <Guitar className="w-6 h-6 text-purple-600" />
+              <div className="p-8">
+
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="bg-green-100 p-3 rounded-full">
+                    <Guitar className="w-6 h-6 text-green-700" />
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl text-stone-800">Blueberry Bagels</h3>
+                    <p className="text-sm text-stone-500">2025</p>
+                  </div>
                 </div>
 
-                <div>
-                  <h3 className="text-xl text-slate-800">Blueberry Bagels</h3>
-                  <p className="text-sm text-gray-500">2025</p>
+                <p className="text-stone-600 text-sm italic mb-6">
+                  "A haunting reflection on love lost, with a melody that lingers like blueberries on the tongue."
+                </p>
+
+                <audio controls preload="none" className="w-full mt-4">
+                  <source src={testAudio} type="audio/mpeg" />
+                  Your browser does not support the audio element.
+                </audio>
+
+                {/* Platform Links */}
+                <div className="flex flex-wrap gap-3 mt-4">
+                  
+                  <a
+                    href="https://open.spotify.com/track/1kBpkI7t7pcZDuHOBYFE0D"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-3 py-1.5 bg-green-500/90 text-white rounded-full text-sm font-medium hover:bg-green-600 transition"
+                  >
+                    Spotify
+                  </a>
+
+                  <a
+                    href="https://music.apple.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-3 py-1.5 bg-stone-800 text-white rounded-full text-sm font-medium hover:bg-stone-900 transition"
+                  >
+                    Apple Music
+                  </a>
+
+                  <a
+                    href="https://youtube.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-3 py-1.5 bg-red-500/90 text-white rounded-full text-sm font-medium hover:bg-red-600 transition"
+                  >
+                    YouTube
+                  </a>
+
                 </div>
-              </div>
 
-              <p className="text-gray-600 text-sm italic mb-6">
-                "A haunting reflection on love lost, with a melody that lingers like blueberries on the tongue."
-              </p>
-
-              <audio controls className="w-full mt-4">
-                <source src={testAudio} type="audio/mpeg" />
-                Your browser does not support the audio element.
-              </audio>
-
-              {/* Platform Links */}
-              <div className="flex flex-wrap gap-3">
-                <a
-                  href="https://open.spotify.com/track/1kBpkI7t7pcZDuHOBYFE0D"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-3 py-1.5 bg-green-500 text-white rounded-full text-sm font-medium hover:bg-green-600 transition"
-                >
-                  Spotify
-                </a>
-
-                <a
-                  href="https://music.apple.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-3 py-1.5 bg-black text-white rounded-full text-sm font-medium hover:bg-gray-900 transition"
-                >
-                  Apple Music
-                </a>
-
-                <a
-                  href="https://youtube.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-3 py-1.5 bg-red-500 text-white rounded-full text-sm font-medium hover:bg-red-600 transition"
-                >
-                  YouTube
-                </a>
               </div>
             </div>
-          </div>
-            {/* <div className="bg-white rounded-2xl p-8 shadow-lg border-4 border-blue-200 relative hover:border-blue-300 transition-colors">
-              <Heart className="absolute -top-4 -right-4 w-8 h-8 text-blue-500 fill-blue-500" />
-              <div className="flex items-center gap-3 mb-4">
-                <div className="bg-blue-100 p-3 rounded-full">
-                  <Guitar className="w-6 h-6 text-blue-600" />
+            <div className="bg-stone-50 rounded-2xl shadow-lg border border-stone-200 relative hover:border-stone-300 transition-colors overflow-hidden">
+    
+              <Heart className="absolute top-4 right-4 w-8 h-8 text-stone-700 fill-stone-700 z-10" />
+
+              {/* Cover Art */}
+              <img
+                src={fingerPhoto}
+                alt="Blueberry Bagels cover art"
+                className="w-full h-48 object-cover"
+              />
+
+              <div className="p-8">
+
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="bg-green-100 p-3 rounded-full">
+                    <Guitar className="w-6 h-6 text-green-700" />
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl text-stone-800">Blueberry Bagels</h3>
+                    <p className="text-sm text-stone-500">2025</p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="text-xl text-slate-800">Say You Want Me Too</h3>
-                  <p className="text-sm text-gray-500">2025</p>
+
+                <p className="text-stone-600 text-sm italic mb-6">
+                  "A haunting reflection on love lost, with a melody that lingers like blueberries on the tongue."
+                </p>
+
+                <audio controls preload="none" className="w-full mt-4">
+                  <source src={testAudio} type="audio/mpeg" />
+                  Your browser does not support the audio element.
+                </audio>
+
+                {/* Platform Links */}
+                <div className="flex flex-wrap gap-3 mt-4">
+                  
+                  <a
+                    href="https://open.spotify.com/track/1kBpkI7t7pcZDuHOBYFE0D"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-3 py-1.5 bg-green-500/90 text-white rounded-full text-sm font-medium hover:bg-green-600 transition"
+                  >
+                    Spotify
+                  </a>
+
+                  <a
+                    href="https://music.apple.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-3 py-1.5 bg-stone-800 text-white rounded-full text-sm font-medium hover:bg-stone-900 transition"
+                  >
+                    Apple Music
+                  </a>
+
+                  <a
+                    href="https://youtube.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-3 py-1.5 bg-red-500/90 text-white rounded-full text-sm font-medium hover:bg-red-600 transition"
+                  >
+                    YouTube
+                  </a>
+
                 </div>
-              </div> 
-              <p className="text-gray-600 text-sm italic">
-                "A cauldron of emotion that simmers with passion and regret."
-              </p>
-              <iframe
-                src="https://open.spotify.com/embed/track/0brEZHYCJJSql0jqXbFTPi?si=d0ff310735ca47dc"
-                width="100%"
-                height="152"
-                frameBorder="0"
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"
-                className="rounded-lg mt-2"
-              ></iframe>
-            </div> */}
+
+              </div>
+            </div>
           </div>
         </div>
 
@@ -482,40 +450,6 @@ export default function App() {
           </div>
         </div>
 
-{/*
-        **Upcoming Shows - COMMENTED OUT FOR NOW**
-        <div className="mb-16">
-          <h2 className="text-4xl mb-8 text-slate-800">Upcoming Shows</h2>
-          <div className="bg-white rounded-3xl shadow-lg p-8">
-            <div className="space-y-4">
-              {[
-                { date: 'Mar 15, 2026', venue: 'Cafe du Nord', city: 'San Francisco, CA' },
-                { date: 'Mar 28, 2026', venue: 'The Basement East', city: 'Nashville, TN' },
-                { date: 'Apr 10, 2026', venue: 'Union Hall', city: 'Brooklyn, NY' },
-                { date: 'Apr 24, 2026', venue: 'The Hideout', city: 'Chicago, IL' },
-              ].map((show, index) => (
-                <div key={index} className="flex items-center justify-between p-4 rounded-xl bg-gradient-to-r from-amber-50 to-rose-50 hover:from-amber-100 hover:to-rose-100 transition-colors">
-                  <div className="flex items-center gap-4">
-                    <div className="bg-slate-700 text-white rounded-xl p-3">
-                      <Calendar className="w-6 h-6" />
-                    </div>
-                    <div>
-                      <div className="text-lg text-gray-900">{show.venue}</div>
-                      <div className="text-sm text-gray-600">{show.city}</div>
-                    </div>
-                  </div>
-                  <div className="text-right">
-                    <div className="text-slate-700">{show.date}</div>
-                    <Button className="mt-2 bg-gradient-to-r from-amber-500 to-rose-500 hover:from-amber-600 hover:to-rose-600 text-white border-0">
-                      Tickets
-                    </Button>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>  */}
-
         {/* Contact Section */}
         <div className="bg-gradient-to-r from-purple-600 via-violet-600 to-rose-600 rounded-3xl p-12 text-white text-center">
           <h2 className="text-4xl mb-4">Book Steven For Your Special Day!</h2>
@@ -529,27 +463,8 @@ export default function App() {
             </div>
 
           </div>
-          {/* <div className="flex flex-wrap justify-center gap-6 mb-8">
-            <a
-              href="mailto:stevenwang8801@gmail.com?subject=Booking Inquiry"
-              className="flex items-center gap-2 bg-white text-slate-700 hover:bg-gray-100 px-4 py-2 rounded-md shadow select-text cursor-text"
-            >
-              <Mail className="w-5 h-5" />
-              <span className="select-text">stevenwang8801@gmail.com</span>
-            </a>
-          </div> */}
 
-          {/* <div className="flex flex-wrap justify-center gap-6 mb-8">
-            <Button className="bg-white text-slate-700 hover:bg-gray-100 gap-2">
-              <Mail className="w-5 h-5" />
-              stevenwang8801@gmail.com
-            </Button>
-            {/* <Button className="bg-white text-slate-700 hover:bg-gray-100 gap-2">
-              <Download className="w-5 h-5" />
-              Download EPK
-            </Button> 
-          </div> */}
-
+          {/* Social Media Links */}
           <div className="flex justify-center gap-6">
             <a href="https://www.instagram.com/steventhewang?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className="bg-white/20 hover:bg-white/30 rounded-full p-4 transition-colors">
               <Instagram className="w-6 h-6" />
