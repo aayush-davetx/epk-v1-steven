@@ -1,4 +1,4 @@
-import { Music, Mail, Instagram, Youtube, Twitter, Download, Star, Calendar, Guitar, Heart, Flower2 } from 'lucide-react';
+import { Music, Mail, Instagram, Youtube, Star, Guitar, Heart, Flower2, Piano } from 'lucide-react';
 import { Button } from './components/ui/button';
 import { Badge } from './components/ui/badge';
 import artistPhoto from '../assets/stevengroup.jpg'
@@ -29,29 +29,53 @@ export default function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-rose-50 to-violet-50">
+    <div className="min-h-screen bg-gradient-to-br from-stone-50 via-green-50 to-blue-50">
       {/* Hero Section */}
       <div className="relative h-[60vh] overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-purple-900/50 to-purple-900/90 z-10"></div>
+  
+        {/* Softer earthy gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-stone-900/40 to-stone-900/70 z-10"></div>
+
         <img 
           src={artistPhoto}
           alt="Steven Wang performing"
           className="w-full h-full object-cover"
         />
+
         <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center text-white px-4">
+          
           <div className="flex items-center gap-4 mb-4">
-            <Guitar className="w-12 h-12 text-amber-300" />
-            <h1 className="text-6xl md:text-8xl animate-fade-in tracking-tight">
+            <Guitar className="w-12 h-12 text-amber-200" />
+            
+            <h1 className="text-6xl md:text-8xl tracking-tight">
               Steven Wang
             </h1>
-            <Flower2 className="w-12 h-12 text-pink-300" />
+            
+            <Piano className="w-12 h-12 text-green-200" />
           </div>
-          <p className="text-xl md:text-2xl mb-6 tracking-wide">Singer-Songwriter • Acapella Artist</p>
+
+          <p className="text-xl md:text-2xl mb-6 tracking-wide text-stone-100">
+            Singer-Songwriter • Performer • Multi-Instrumentalist
+          </p>
+
           <div className="flex gap-3 flex-wrap justify-center">
-            <Badge className="bg-amber-500 hover:bg-amber-600 text-white px-4 py-2">Acoustic</Badge>
-            <Badge className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2">Acapella</Badge>
-            <Badge className="bg-rose-500 hover:bg-rose-600 text-white px-4 py-2">Folk</Badge>
-            <Badge className="bg-violet-500 hover:bg-violet-600 text-white px-4 py-2">Indie</Badge>
+            
+            <Badge className="bg-stone-200 text-stone-800 px-4 py-2 hover:bg-stone-300">
+              Acoustic
+            </Badge>
+
+            <Badge className="bg-green-200 text-green-900 px-4 py-2 hover:bg-green-300">
+              Acapella
+            </Badge>
+
+            <Badge className="bg-blue-200 text-blue-900 px-4 py-2 hover:bg-blue-300">
+              Folk
+            </Badge>
+
+            <Badge className="bg-amber-200 text-amber-900 px-4 py-2 hover:bg-amber-300">
+              Indie
+            </Badge>
+
           </div>
         </div>
       </div>
@@ -59,40 +83,49 @@ export default function App() {
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         
-        {/* About Section */}
         <div className="grid md:grid-cols-2 gap-12 mb-16">
+          
           <div className="order-2 md:order-1">
-            <h2 className="text-4xl mb-6 text-purple-900">About</h2>
-            <p className="text-lg text-gray-700 mb-4 leading-relaxed">
+            <h2 className="text-4xl mb-6 text-stone-800">About</h2>
+
+            <p className="text-lg text-stone-600 mb-4 leading-relaxed">
               12 years in Beijing, 8 years in Seattle—this 20 year old singer-songwriter grew up 
               submerged in Chinese ballads and later found himself entranced by soul-catching jazz 
               fusions, tear-jerking pop ballads, lyrical wonders, and ear-impregnating theatrical pop.
             </p>
-            <p className="text-lg text-gray-700 mb-4 leading-relaxed">
+
+            <p className="text-lg text-stone-600 mb-4 leading-relaxed">
               A proud Husky at the University of Washington, Steven's journey includes both acoustic 
               guitar storytelling and acapella vocal performances. His music explores the intimate 
               corners of lost love, regret, and the bittersweet beauty of what could have been.
             </p>
-            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+
+            <p className="text-lg text-stone-600 mb-6 leading-relaxed">
               Armed with just his guitar and devastatingly honest lyrics, Steven's songs resonate with 
               anyone who's ever wondered "what if?" His debut release showcases the juices of his 
               influences and creative exploration, and there is much more to come—he is scheming big... 😈
             </p>
+
             <div className="flex flex-wrap gap-4">
-              <div className="bg-gradient-to-r from-purple-100 to-purple-200 rounded-2xl p-6 flex-1 min-w-[140px]">
-                <div className="text-3xl text-purple-700 mb-1">100K+</div>
-                <div className="text-sm text-purple-900">Total Streams</div>
+              
+              <div className="bg-gradient-to-r from-stone-100 to-stone-200 rounded-2xl p-6 flex-1 min-w-[140px]">
+                <div className="text-3xl text-stone-700 mb-1">100K+</div>
+                <div className="text-sm text-stone-800">Total Streams</div>
               </div>
-              <div className="bg-gradient-to-r from-rose-100 to-rose-200 rounded-2xl p-6 flex-1 min-w-[140px]">
-                <div className="text-3xl text-rose-700 mb-1">UW</div>
-                <div className="text-sm text-rose-900">Proud Husky 🐺</div>
+
+              <div className="bg-gradient-to-r from-green-100 to-green-200 rounded-2xl p-6 flex-1 min-w-[140px]">
+                <div className="text-3xl text-green-700 mb-1">UW</div>
+                <div className="text-sm text-green-900">Proud Husky 🐺</div>
               </div>
-              <div className="bg-gradient-to-r from-violet-100 to-violet-200 rounded-2xl p-6 flex-1 min-w-[140px]">
-                <div className="text-3xl text-violet-700 mb-1">2023</div>
-                <div className="text-sm text-violet-900">Debut Release</div>
+
+              <div className="bg-gradient-to-r from-blue-100 to-blue-200 rounded-2xl p-6 flex-1 min-w-[140px]">
+                <div className="text-3xl text-blue-700 mb-1">2023</div>
+                <div className="text-sm text-blue-900">Debut Release</div>
               </div>
+
             </div>
           </div>
+
           <div className="order-1 md:order-2">
             <img 
               src={portraitPhoto}
@@ -100,6 +133,7 @@ export default function App() {
               className="w-full h-[400px] object-cover object-[50%_30%] rounded-3xl shadow-2xl"
             />
           </div>
+
         </div>
 
         {/* Carousel Section*/} 
