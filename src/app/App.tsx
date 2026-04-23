@@ -5,7 +5,12 @@ import artistPhoto from '../assets/stevengroup.jpg'
 import portraitPhoto from '../assets/getaway-15.jpg'
 import birthdayPhoto from '../assets/birthday-photo.jpg'
 import fingerPhoto from '../assets/fingerpoint.jpg'
-import testAudio from '../assets/audio/test.mp3'
+import bagelPhoto from '../assets/bagelphoto.jpg'
+import wantmePhoto from '../assets/wantmephoto.jpg'
+import openPhoto from '../assets/opendoorphoto.jpg'
+import bagelAudio from '../assets/audio/bagels.mp3'
+import doorAudio from '../assets/audio/door.mp3'
+import wantmeAudio from '../assets/audio/wantme.mp3'
 import { useState, useEffect } from "react";
 
 export default function App() {
@@ -183,11 +188,11 @@ export default function App() {
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-stone-50 rounded-2xl shadow-lg border border-stone-200 relative hover:border-stone-300 transition-colors overflow-hidden">
     
-              <Heart className="absolute top-4 right-4 w-8 h-8 text-stone-700 fill-stone-700 z-10" />
+              {/* <Heart className="absolute top-4 right-4 w-8 h-8 text-white-700 fill-white-700 z-10" /> */}
 
               {/* Cover Art */}
               <img
-                src={fingerPhoto}
+                src={bagelPhoto}
                 alt="Blueberry Bagels cover art"
                 className="w-full h-48 object-cover"
               />
@@ -210,7 +215,7 @@ export default function App() {
                 </p>
 
                 <audio controls preload="none" className="w-full mt-4">
-                  <source src={testAudio} type="audio/mpeg" />
+                  <source src={bagelAudio} type="audio/mpeg" />
                   Your browser does not support the audio element.
                 </audio>
 
@@ -250,13 +255,13 @@ export default function App() {
             </div>
             <div className="bg-stone-50 rounded-2xl shadow-lg border border-stone-200 relative hover:border-stone-300 transition-colors overflow-hidden">
     
-              <Heart className="absolute top-4 right-4 w-8 h-8 text-stone-700 fill-stone-700 z-10" />
+              {/* <Heart className="absolute top-4 right-4 w-8 h-8 text-stone-700 fill-stone-700 z-10" /> */}
 
               {/* Cover Art */}
               <img
-                src={fingerPhoto}
-                alt="Blueberry Bagels cover art"
-                className="w-full h-48 object-cover"
+                src={wantmePhoto}
+                alt="Say You Want Me Too cover art"
+                className="w-full h-48 object-cover object-[50%_90%]"
               />
 
               <div className="p-8">
@@ -267,7 +272,7 @@ export default function App() {
                   </div>
 
                   <div>
-                    <h3 className="text-xl text-stone-800">Blueberry Bagels</h3>
+                    <h3 className="text-xl text-stone-800">Say You Want Me Too</h3>
                     <p className="text-sm text-stone-500">2025</p>
                   </div>
                 </div>
@@ -277,7 +282,7 @@ export default function App() {
                 </p>
 
                 <audio controls preload="none" className="w-full mt-4">
-                  <source src={testAudio} type="audio/mpeg" />
+                  <source src={wantmeAudio} type="audio/mpeg" />
                   Your browser does not support the audio element.
                 </audio>
 
@@ -317,12 +322,12 @@ export default function App() {
             </div>
             <div className="bg-stone-50 rounded-2xl shadow-lg border border-stone-200 relative hover:border-stone-300 transition-colors overflow-hidden">
     
-              <Heart className="absolute top-4 right-4 w-8 h-8 text-stone-700 fill-stone-700 z-10" />
+              {/* <Heart className="absolute top-4 right-4 w-8 h-8 text-stone-700 fill-stone-700 z-10" /> */}
 
               {/* Cover Art */}
               <img
-                src={fingerPhoto}
-                alt="Blueberry Bagels cover art"
+                src={openPhoto}
+                alt="Open The Door cover art"
                 className="w-full h-48 object-cover"
               />
 
@@ -334,7 +339,7 @@ export default function App() {
                   </div>
 
                   <div>
-                    <h3 className="text-xl text-stone-800">Blueberry Bagels</h3>
+                    <h3 className="text-xl text-stone-800">Open The Door</h3>
                     <p className="text-sm text-stone-500">2025</p>
                   </div>
                 </div>
@@ -344,7 +349,7 @@ export default function App() {
                 </p>
 
                 <audio controls preload="none" className="w-full mt-4">
-                  <source src={testAudio} type="audio/mpeg" />
+                  <source src={doorAudio} type="audio/mpeg" />
                   Your browser does not support the audio element.
                 </audio>
 
