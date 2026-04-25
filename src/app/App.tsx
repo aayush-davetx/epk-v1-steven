@@ -8,6 +8,11 @@ import fingerPhoto from '../assets/fingerpoint.jpg'
 import bagelPhoto from '../assets/bagelphoto.jpg'
 import wantmePhoto from '../assets/wantmephoto.jpg'
 import openPhoto from '../assets/opendoorphoto.jpg'
+import acapellaPhoto from '../assets/acapella.JPEG'
+import soloPhoto from '../assets/solo.JPEG'
+import teashopPhoto from '../assets/teashop.JPEG'
+import trainPhoto from '../assets/train.JPEG'
+import blossomPhoto from '../assets/blossom.JPEG'
 import bagelAudio from '../assets/audio/bagels.mp3'
 import doorAudio from '../assets/audio/door.mp3'
 import wantmeAudio from '../assets/audio/wantme.mp3'
@@ -16,11 +21,11 @@ import { useState, useEffect } from "react";
 export default function App() {
 
   const images = [
-  "https://images.unsplash.com/photo-1745929201281-26b5f874a0d1?...",
-  "https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
-  "https://images.unsplash.com/photo-1490750967868-88aa4486c946",
-  "https://images.unsplash.com/photo-1490750967868-88aa4486c946",
-  "https://images.unsplash.com/photo-1490750967868-88aa4486c946"
+  soloPhoto,
+  acapellaPhoto,
+  teashopPhoto,
+  trainPhoto,
+  blossomPhoto
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
