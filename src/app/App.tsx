@@ -99,21 +99,25 @@ export default function App() {
             <h2 className="text-4xl mb-6 text-stone-800">About</h2>
 
             <p className="text-lg text-stone-600 mb-4 leading-relaxed">
-              12 years in Beijing, 8 years in Seattle—this 20 year old singer-songwriter grew up 
-              submerged in Chinese ballads and later found himself entranced by soul-catching jazz 
-              fusions, tear-jerking pop ballads, lyrical wonders, and ear-impregnating theatrical pop.
+              Steven Wang is a Seattle-based singer-songwriter, producer, and 
+              multi-instrumentalist whose work bridges cinematic R&B, jazz-influenced 
+              pop, and harmony-driven soundscapes. His internationally award winning 
+              performances have graced stages including Carnegie Hall, Town Hall on 
+              Broadway, San Francisco's Fox Theatre, Seattle's Meydenbauer Center, and
+              Bumbershoot at Seattle Center.
             </p>
 
             <p className="text-lg text-stone-600 mb-4 leading-relaxed">
-              A proud Husky at the University of Washington, Steven's journey includes both acoustic 
-              guitar storytelling and acapella vocal performances. His music explores the intimate 
-              corners of lost love, regret, and the bittersweet beauty of what could have been.
+              Steven has released six original tracks, and has performed sold-out 
+              shows at Seattle's Tea Republik and Theory U district. His original 
+              compositions and arrangements were featured at some of the most 
+              prestigious venues of New York City in 2025. 
             </p>
 
             <p className="text-lg text-stone-600 mb-6 leading-relaxed">
-              Armed with just his guitar and devastatingly honest lyrics, Steven's songs resonate with 
-              anyone who's ever wondered "what if?" His debut release showcases the juices of his 
-              influences and creative exploration, and there is much more to come—he is scheming big... 😈
+              When he's not on stage or in the studio, you might find him busking 
+              at Pike Place Market, playing farmers markets around Seattle, or sound 
+              engineering at local shows and open mics.
             </p>
 
             <div className="flex flex-wrap gap-4">
