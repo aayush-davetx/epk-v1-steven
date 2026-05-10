@@ -16,9 +16,19 @@ import blossomPhoto from '../assets/blossom.JPEG'
 import bagelAudio from '../assets/audio/bagels.mp3'
 import doorAudio from '../assets/audio/door.mp3'
 import wantmeAudio from '../assets/audio/wantme.mp3'
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 export default function App() {
+
+  const audioRefs = useRef([]);
+
+  const handlePlay = (currentIndex) => {
+    audioRefs.current.forEach((audio, index) => {
+      if (audio && index !== currentIndex) {
+        audio.pause();
+      }
+    });
+  };
 
   const images = [
   soloPhoto,
@@ -223,7 +233,13 @@ export default function App() {
                   "A haunting reflection on love lost, with a melody that lingers like blueberries on the tongue."
                 </p>
 
-                <audio controls preload="none" className="w-full mt-4">
+                <audio   
+                  controls
+                  preload="none"
+                  className="w-full mt-4"
+                  ref={(el) => (audioRefs.current[0] = el)}
+                  onPlay={() => handlePlay(0)}
+                >
                   <source src={bagelAudio} type="audio/mpeg" />
                   Your browser does not support the audio element.
                 </audio>
@@ -290,7 +306,13 @@ export default function App() {
                   "A ballad about longing, connection, and unrequited love."
                 </p>
 
-                <audio controls preload="none" className="w-full mt-4">
+                <audio
+                  controls
+                  preload="none"
+                  className="w-full mt-4"
+                  ref={(el) => (audioRefs.current[1] = el)}
+                  onPlay={() => handlePlay(1)}
+                >
                   <source src={wantmeAudio} type="audio/mpeg" />
                   Your browser does not support the audio element.
                 </audio>
@@ -354,10 +376,16 @@ export default function App() {
                 </div>
 
                 <p className="text-stone-600 text-sm italic mb-6">
-                  "A haunting reflection on love lost, with a melody that lingers like blueberries on the tongue."
+                  "Pining for a love, hoping the apple of your eye opens their heart to you."
                 </p>
 
-                <audio controls preload="none" className="w-full mt-4">
+                <audio
+                  controls
+                  preload="none"
+                  className="w-full mt-4"
+                  ref={(el) => (audioRefs.current[2] = el)}
+                  onPlay={() => handlePlay(2)}
+                >
                   <source src={doorAudio} type="audio/mpeg" />
                   Your browser does not support the audio element.
                 </audio>
