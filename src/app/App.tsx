@@ -232,8 +232,8 @@ export default function App() {
         {/* Featured Songs Section */}
         <div className="mb-16">
           <h2 className="text-4xl mb-8 text-stone-800 text-center">Featured Songs</h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-stone-50 rounded-2xl shadow-lg border border-stone-200 relative hover:border-stone-300 transition-colors overflow-hidden">
+          <div className="grid lg:grid-cols-3 gap-6 items-stretch">
+            <div className="bg-stone-50 rounded-2xl shadow-lg border border-stone-200 relative hover:border-stone-300 transition-colors overflow-hidden min-h-[530px]">
     
               {/* <Heart className="absolute top-4 right-4 w-8 h-8 text-white-700 fill-white-700 z-10" /> */}
 
@@ -244,72 +244,58 @@ export default function App() {
                 className="w-full h-48 object-cover"
               />
 
-              <div className="p-8">
+              <div className="p-8 pb-40">
 
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="bg-green-100 p-3 rounded-full">
-                    <Guitar className="w-6 h-6 text-green-700" />
+                <div>
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="bg-green-100 p-3 rounded-full">
+                      <Guitar className="w-6 h-6 text-green-700" />
+                    </div>
+
+                    <div>
+                      <h3 className="text-xl text-stone-800">Blueberry Bagels</h3>
+                      <p className="text-sm text-stone-500">2025</p>
+                    </div>
                   </div>
 
-                  <div>
-                    <h3 className="text-xl text-stone-800">Blueberry Bagels</h3>
-                    <p className="text-sm text-stone-500">2025</p>
+                  <div className="text-stone-600 text-sm italic mb-6 space-y-1">
+                    <p>Written & Performed by Steven Wang</p>
+                    <p>Produced by Amit Amram & Steven Wang</p>
                   </div>
                 </div>
 
-                <p className="text-stone-600 text-sm italic mb-6">
-                  <p>Written & Performed by Steven Wang</p>
-                  <p>Produced by Amit Amram & Steven Wang</p>
-                </p>
-
-                <audio   
-                  controls
-                  preload="none"
-                  className="w-full mt-4"
-                  ref={(el) => (audioRefs.current[0] = el)}
-                  onPlay={() => handlePlay(0)}
-                >
-                  <source src={bagelAudio} type="audio/mpeg" />
-                  Your browser does not support the audio element.
-                </audio>
-
-                {/* Platform Links */}
-                <div className="flex flex-wrap justify-center gap-3 mt-6">
-                  
-                  <a
-                    href="https://open.spotify.com/track/1kBpkI7t7pcZDuHOBYFE0D"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-3 py-1.5 bg-green-500/90 text-white rounded-full text-sm font-medium hover:bg-green-600 transition"
+                <div className="absolute bottom-8 left-8 right-8">
+                  <audio   
+                    controls
+                    preload="none"
+                    className="w-full mt-4"
+                    ref={(el) => (audioRefs.current[0] = el)}
+                    onPlay={() => handlePlay(0)}
                   >
-                    Spotify
-                  </a>
+                    <source src={bagelAudio} type="audio/mpeg" />
+                    Your browser does not support the audio element.
+                  </audio>
 
-                  {/* <a
-                    href="https://music.apple.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-3 py-1.5 bg-stone-800 text-white rounded-full text-sm font-medium hover:bg-stone-900 transition"
-                  >
-                    Apple Music
-                  </a> */}
+                  {/* Platform Links */}
+                  <div className="flex justify-center gap-3 mt-6">
+                    
+                    <a
+                      href="https://open.spotify.com/track/1kBpkI7t7pcZDuHOBYFE0D"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-3 py-1.5 bg-green-500/90 text-white rounded-full text-sm font-medium hover:bg-green-600 transition"
+                    >
+                      Spotify
+                    </a>
 
-                  {/* <a
-                    href="https://youtube.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-3 py-1.5 bg-red-500/90 text-white rounded-full text-sm font-medium hover:bg-red-600 transition"
-                  >
-                    YouTube
-                  </a> */}
+                  </div>
 
                 </div>
 
               </div>
             </div>
-            <div className="bg-stone-50 rounded-2xl shadow-lg border border-stone-200 relative hover:border-stone-300 transition-colors overflow-hidden">
-    
-              {/* <Heart className="absolute top-4 right-4 w-8 h-8 text-stone-700 fill-stone-700 z-10" /> */}
+            
+            <div className="bg-stone-50 rounded-2xl shadow-lg border border-stone-200 relative hover:border-stone-300 transition-colors overflow-hidden min-h-[530px]">
 
               {/* Cover Art */}
               <img
@@ -318,70 +304,64 @@ export default function App() {
                 className="w-full h-48 object-cover object-[50%_80%]"
               />
 
-              <div className="p-8">
+              <div className="p-8 pb-40">
 
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="bg-green-100 p-3 rounded-full">
-                    <Guitar className="w-6 h-6 text-green-700" />
+                <div>
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="bg-green-100 p-3 rounded-full">
+                      <Guitar className="w-6 h-6 text-green-700" />
+                    </div>
+
+                    <div>
+                      <h3 className="text-xl text-stone-800">Say You Want Me Too</h3>
+                      <p className="text-sm text-stone-500">2025</p>
+                    </div>
                   </div>
 
-                  <div>
-                    <h3 className="text-xl text-stone-800">Say You Want Me Too</h3>
-                    <p className="text-sm text-stone-500">2025</p>
+                  <div className="text-stone-600 text-sm italic mb-6 space-y-1">
+                    <p>Written & Performed by Steven Wang</p>
+                    <p>Produced by Amit Amram</p>
                   </div>
                 </div>
 
-                <p className="text-stone-600 text-sm italic mb-6">
-                  <p>Written & Performed by Steven Wang</p>
-                  <p>Produced by Amit Amram</p>
-                </p>
-
-                <audio
-                  controls
-                  preload="none"
-                  className="w-full mt-4"
-                  ref={(el) => (audioRefs.current[1] = el)}
-                  onPlay={() => handlePlay(1)}
-                >
-                  <source src={wantmeAudio} type="audio/mpeg" />
-                  Your browser does not support the audio element.
-                </audio>
-
-                {/* Platform Links */}
-                <div className="flex flex-wrap justify-center gap-3 mt-6">
-                  
-                  <a
-                    href="https://open.spotify.com/track/0brEZHYCJJSql0jqXbFTPi"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-3 py-1.5 bg-green-500/90 text-white rounded-full text-sm font-medium hover:bg-green-600 transition"
+                <div className="absolute bottom-8 left-8 right-8">
+                  <audio
+                    controls
+                    preload="none"
+                    className="w-full mt-4"
+                    ref={(el) => (audioRefs.current[1] = el)}
+                    onPlay={() => handlePlay(1)}
                   >
-                    Spotify
-                  </a>
+                    <source src={wantmeAudio} type="audio/mpeg" />
+                    Your browser does not support the audio element.
+                  </audio>
 
-                  <a
-                    href="https://music.apple.com/us/song/say-you-want-me-too/1795288029"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-3 py-1.5 bg-stone-800 text-white rounded-full text-sm font-medium hover:bg-stone-900 transition"
-                  >
-                    Apple Music
-                  </a>
+                  {/* Platform Links */}
+                  <div className="flex justify-center gap-3 mt-6">
+                    
+                    <a
+                      href="https://open.spotify.com/track/0brEZHYCJJSql0jqXbFTPi"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-3 py-1.5 bg-green-500/90 text-white rounded-full text-sm font-medium hover:bg-green-600 transition"
+                    >
+                      Spotify
+                    </a>
 
-                  {/* <a
-                    href="https://youtube.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-3 py-1.5 bg-red-500/90 text-white rounded-full text-sm font-medium hover:bg-red-600 transition"
-                  >
-                    YouTube
-                  </a> */}
+                    <a
+                      href="https://music.apple.com/us/song/say-you-want-me-too/1795288029"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-3 py-1.5 bg-stone-800 text-white rounded-full text-sm font-medium hover:bg-stone-900 transition"
+                    >
+                      Apple Music
+                    </a>
 
+                  </div>
                 </div>
-
               </div>
             </div>
-            <div className="bg-stone-50 rounded-2xl shadow-lg border border-stone-200 relative hover:border-stone-300 transition-colors overflow-hidden">
+            <div className="bg-stone-50 rounded-2xl shadow-lg border border-stone-200 relative hover:border-stone-300 transition-colors overflow-hidden min-h-[530px]">
     
               {/* <Heart className="absolute top-4 right-4 w-8 h-8 text-stone-700 fill-stone-700 z-10" /> */}
 
@@ -392,67 +372,61 @@ export default function App() {
                 className="w-full h-48 object-cover"
               />
 
-              <div className="p-8">
+              <div className="p-8 pb-40">
 
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="bg-green-100 p-3 rounded-full">
-                    <Guitar className="w-6 h-6 text-green-700" />
+                <div>
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="bg-green-100 p-3 rounded-full">
+                      <Guitar className="w-6 h-6 text-green-700" />
+                    </div>
+
+                    <div>
+                      <h3 className="text-xl text-stone-800">Open The Door</h3>
+                      <p className="text-sm text-stone-500">2025</p>
+                    </div>
                   </div>
 
-                  <div>
-                    <h3 className="text-xl text-stone-800">Open The Door</h3>
-                    <p className="text-sm text-stone-500">2025</p>
+                  <div className="text-stone-600 text-sm italic mb-6 space-y-1">
+                    <p>Written & Performed by Steven Wang</p>
+                    <p>Prod. by Amit Amram & Feat. Alex Zuniga, Grace Selmann, Jaden Ritscher, Shai Permilovsky</p>
                   </div>
                 </div>
 
-                <p className="text-stone-600 text-sm italic mb-6">
-                  <p>Written & Performed by Steven Wang</p>
-                  <p>Prod. by Amit Amram & Feat. Alex Zuniga, Grace Selmann, Jaden Ritscher, Shai Permilovsky</p>
-                </p>
-
-                <audio
-                  controls
-                  preload="none"
-                  className="w-full mt-4"
-                  ref={(el) => (audioRefs.current[2] = el)}
-                  onPlay={() => handlePlay(2)}
-                >
-                  <source src={doorAudio} type="audio/mpeg" />
-                  Your browser does not support the audio element.
-                </audio>
-
-                {/* Platform Links */}
-                <div className="flex flex-wrap justify-center gap-3 mt-6">
-                  
-                  <a
-                    href="https://open.spotify.com/track/33Q7mGApTVzXx0dTOq3SGb"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-3 py-1.5 bg-green-500/90 text-white rounded-full text-sm font-medium hover:bg-green-600 transition"
+                <div className="absolute bottom-8 left-8 right-8">
+                  <audio
+                    controls
+                    preload="none"
+                    className="w-full mt-4"
+                    ref={(el) => (audioRefs.current[2] = el)}
+                    onPlay={() => handlePlay(2)}
                   >
-                    Spotify
-                  </a>
+                    <source src={doorAudio} type="audio/mpeg" />
+                    Your browser does not support the audio element.
+                  </audio>
 
-                  <a
-                    href="https://music.apple.com/us/album/open-the-door-single/1688726328"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-3 py-1.5 bg-stone-800 text-white rounded-full text-sm font-medium hover:bg-stone-900 transition"
-                  >
-                    Apple Music
-                  </a>
+                  {/* Platform Links */}
+                  <div className="flex justify-center gap-3 mt-6">
+                    
+                    <a
+                      href="https://open.spotify.com/track/33Q7mGApTVzXx0dTOq3SGb"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-3 py-1.5 bg-green-500/90 text-white rounded-full text-sm font-medium hover:bg-green-600 transition"
+                    >
+                      Spotify
+                    </a>
 
-                  {/* <a
-                    href="https://youtube.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-3 py-1.5 bg-red-500/90 text-white rounded-full text-sm font-medium hover:bg-red-600 transition"
-                  >
-                    YouTube
-                  </a> */}
+                    <a
+                      href="https://music.apple.com/us/album/open-the-door-single/1688726328"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-3 py-1.5 bg-stone-800 text-white rounded-full text-sm font-medium hover:bg-stone-900 transition"
+                    >
+                      Apple Music
+                    </a>
 
+                  </div>
                 </div>
-
               </div>
             </div>
           </div>
