@@ -4,7 +4,7 @@ import { Badge } from './components/ui/badge';
 import artistPhoto from '../assets/stevengroup.webp'
 import portraitPhoto from '../assets/getaway-15.webp'
 import birthdayPhoto from '../assets/birthday-photo.webp'
-import fingerPhoto from '../assets/fingerpoint.jpg'
+// import fingerPhoto from '../assets/fingerpoint.jpg'
 import bagelPhoto from '../assets/bagelphoto.webp'
 import wantmePhoto from '../assets/wantmephoto.webp'
 import openPhoto from '../assets/opendoorphoto.webp'
