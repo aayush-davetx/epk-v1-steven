@@ -434,35 +434,39 @@ export default function App() {
 
         {/* Press Quotes Section */}
         <div className="mb-16">
-          <h2 className="text-4xl mb-8 text-purple-900 text-center">Press & Reviews</h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-white rounded-2xl p-8 shadow-lg border-l-4 border-purple-400">
+          <h2 className="text-4xl mb-8 text-stone-800 text-center">We Love Our Clients!</h2>
+          <div className="grid md:grid-cols-1 gap-6">
+            {/* <div className="bg-white rounded-2xl p-8 shadow-lg border-l-4 border-purple-400">
               <Star className="w-8 h-8 text-purple-500 fill-purple-500 mb-4" />
               <p className="text-gray-700 mb-4 italic">
                 "Steven's vulnerability and emotional storytelling enchanted our wedding day beyond our wildest dreams."
               </p>
               <div className="text-purple-600">— Surayut & Quyyen's Wedding</div>
-            </div>
+            </div> */}
             <div className="bg-white rounded-2xl p-8 shadow-lg border-l-4 border-rose-400">
               <Star className="w-8 h-8 text-rose-500 fill-rose-500 mb-4" />
               <p className="text-gray-700 mb-4 italic">
-                "Steven's captivating vocals, tasteful song selection, and infectious passion made his birthday performance unforgettable."
+                "I hired Steven Wang Band for my 33rd birthday party on July 19, 2025, and I can honestly say they were one of the highlights of the night!
+From the very beginning, Steven was incredibly friendly, communicative, and professional. He made the booking process easy and stress-free. On the day of the event, he and his band arrived on time, fully prepared, and brought such amazing energy to the venue.
+I had requested two specific songs that are very special to me – “I Love You” by Celine Dion and “Palagi” by TJ Monterde – and they performed both beautifully. Their rendition of these songs gave me goosebumps and made the night feel even more meaningful. They also performed their original songs, which sounded so good. 
+Overall, Steven Wang Band exceeded my expectations. They made my birthday party feel extra special and unforgettable. If you are looking for a professional, talented, and friendly band to make your event come alive, I highly recommend them. I am so grateful for their performance and will definitely be booking them again in the future!
+"
               </p>
-              <div className="text-rose-600">— CJ Tuloza's Birthday</div>
+              <div className="text-rose-600">— CJ Tuloza</div>
             </div>
-            <div className="bg-white rounded-2xl p-8 shadow-lg border-l-4 border-violet-400">
+            {/* <div className="bg-white rounded-2xl p-8 shadow-lg border-l-4 border-violet-400">
               <Star className="w-8 h-8 text-violet-500 fill-violet-500 mb-4" />
               <p className="text-gray-700 mb-4 italic">
                 "It's a no-brainer to book Steven for our residents because of his professionalism and uncanny ability to thrill audiences."
               </p>
               <div className="text-violet-600">— Theory U District</div>
-            </div>
+            </div> */}
           </div>
         </div>
 
         {/* Recent Performance Section */}
         <div className="mb-16">
-          <h2 className="text-4xl mb-8 text-slate-800">Recent Performances</h2>
+          {/* <h2 className="text-4xl mb-8 text-slate-800">Recent Performances</h2> */}
           <div className="relative rounded-3xl overflow-hidden shadow-2xl">
             <img 
               src={birthdayPhoto}
@@ -479,7 +483,7 @@ export default function App() {
         </div>
 
         {/* Intimate Studio Photo */}
-        <div className="mb-16">
+        {/* <div className="mb-16">
           <div className="relative rounded-3xl overflow-hidden shadow-2xl">
             <img 
               src={fingerPhoto}
@@ -495,7 +499,7 @@ export default function App() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Contact Section */}
         <div className="bg-gradient-to-r from-purple-600 via-violet-600 to-rose-600 rounded-3xl p-12 text-white text-center">
