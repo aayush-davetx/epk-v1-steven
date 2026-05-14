@@ -1,8 +1,8 @@
 import { Music, Mail, Instagram, Youtube, Star, Guitar, Heart, Flower2, Piano } from 'lucide-react';
 import { Button } from './components/ui/button';
 import { Badge } from './components/ui/badge';
-import artistPhoto from '../assets/stevengroup.jpg'
-import portraitPhoto from '../assets/getaway-15.jpg'
+import artistPhoto from '../assets/stevengroup.webp'
+import portraitPhoto from '../assets/getaway-15.webp'
 import birthdayPhoto from '../assets/birthday-photo.jpg'
 import fingerPhoto from '../assets/fingerpoint.jpg'
 import bagelPhoto from '../assets/bagelphoto.jpg'
@@ -233,7 +233,7 @@ export default function App() {
         <div className="mb-16">
           <h2 className="text-4xl mb-8 text-stone-800 text-center">Featured Songs</h2>
           <div className="grid lg:grid-cols-3 gap-6 items-stretch">
-            <div className="bg-stone-50 rounded-2xl shadow-lg border border-stone-200 relative hover:border-stone-300 transition-colors overflow-hidden min-h-[530px]">
+            <div className="bg-stone-50 rounded-2xl shadow-lg border border-stone-200 relative hover:border-stone-300 transition-colors overflow-hidden min-h-[510px]">
     
               {/* <Heart className="absolute top-4 right-4 w-8 h-8 text-white-700 fill-white-700 z-10" /> */}
 
@@ -295,7 +295,7 @@ export default function App() {
               </div>
             </div>
             
-            <div className="bg-stone-50 rounded-2xl shadow-lg border border-stone-200 relative hover:border-stone-300 transition-colors overflow-hidden min-h-[530px]">
+            <div className="bg-stone-50 rounded-2xl shadow-lg border border-stone-200 relative hover:border-stone-300 transition-colors overflow-hidden min-h-[510px]">
 
               {/* Cover Art */}
               <img
@@ -361,7 +361,7 @@ export default function App() {
                 </div>
               </div>
             </div>
-            <div className="bg-stone-50 rounded-2xl shadow-lg border border-stone-200 relative hover:border-stone-300 transition-colors overflow-hidden min-h-[530px]">
+            <div className="bg-stone-50 rounded-2xl shadow-lg border border-stone-200 relative hover:border-stone-300 transition-colors overflow-hidden min-h-[510px]">
     
               {/* <Heart className="absolute top-4 right-4 w-8 h-8 text-stone-700 fill-stone-700 z-10" /> */}
 
