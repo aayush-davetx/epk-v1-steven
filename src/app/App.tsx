@@ -258,7 +258,8 @@ export default function App() {
                 </div>
 
                 <p className="text-stone-600 text-sm italic mb-6">
-                  "A haunting reflection on love lost, with a melody that lingers like blueberries on the tongue."
+                  <p>Written & Performed by Steven Wang</p>
+                  <p>Produced by Amit Amram & Steven Wang</p>
                 </p>
 
                 <audio   
@@ -331,7 +332,8 @@ export default function App() {
                 </div>
 
                 <p className="text-stone-600 text-sm italic mb-6">
-                  "A ballad about longing, connection, and unrequited love."
+                  <p>Written & Performed by Steven Wang</p>
+                  <p>Produced by Amit Amram</p>
                 </p>
 
                 <audio
@@ -404,7 +406,8 @@ export default function App() {
                 </div>
 
                 <p className="text-stone-600 text-sm italic mb-6">
-                  "Pining for a love, hoping the apple of your eye opens their heart to you."
+                  <p>Written & Performed by Steven Wang</p>
+                  <p>Prod. by Amit Amram & Feat. Alex Zuniga, Grace Selmann, Jaden Ritscher, Shai Permilovsky</p>
                 </p>
 
                 <audio
