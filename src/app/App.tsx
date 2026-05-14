@@ -150,7 +150,7 @@ export default function App() {
         {/* FULL WIDTH FEATURE TILES */}
         <div className="grid md:grid-cols-3 gap-6 mb-16">
 
-          <div className="bg-gradient-to-r from-stone-100 to-stone-200 rounded-2xl p-8 min-h-[160px] flex flex-col justify-center shadow-md">
+          <div className="bg-gradient-to-r from-stone-100 to-stone-200 rounded-2xl p-8 min-h-[160px] flex flex-col justify-center items-center text-center shadow-md">
             
             <div className="text-2xl md:text-3xl text-stone-700 mb-2">
               Bilingual Performer
@@ -162,7 +162,7 @@ export default function App() {
 
           </div>
 
-          <div className="bg-gradient-to-r from-green-100 to-green-200 rounded-2xl p-8 min-h-[160px] flex flex-col justify-center shadow-md">
+          <div className="bg-gradient-to-r from-green-100 to-green-200 rounded-2xl p-8 min-h-[160px] flex flex-col justify-center items-center text-center shadow-md">
             
             <div className="text-2xl md:text-3xl text-green-700 mb-2">
               In-House Sound System
@@ -174,7 +174,7 @@ export default function App() {
 
           </div>
 
-          <div className="bg-gradient-to-r from-blue-100 to-blue-200 rounded-2xl p-8 min-h-[160px] flex flex-col justify-center shadow-md">
+          <div className="bg-gradient-to-r from-blue-100 to-blue-200 rounded-2xl p-8 min-h-[160px] flex flex-col justify-center items-center text-center shadow-md">
             
             <div className="text-2xl md:text-3xl text-blue-700 mb-2">
               Instruments & Singers
