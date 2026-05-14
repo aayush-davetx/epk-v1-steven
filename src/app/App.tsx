@@ -103,10 +103,14 @@ export default function App() {
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         
-        <div className="grid md:grid-cols-2 gap-12 mb-16">
-          
+        <div className="grid md:grid-cols-2 gap-12 mb-10">
+  
+          {/* LEFT COLUMN */}
           <div className="order-2 md:order-1">
-            <h2 className="text-4xl mb-6 text-stone-800">About</h2>
+            
+            <h2 className="text-4xl mb-6 text-stone-800">
+              About
+            </h2>
 
             <p className="text-lg text-stone-600 mb-4 leading-relaxed">
               Steven Wang is a Seattle-based singer-songwriter, producer, and 
@@ -121,7 +125,7 @@ export default function App() {
               Steven has released six original tracks, and has performed sold-out 
               shows at Seattle's Tea Republik and Theory U district. His original 
               compositions and arrangements were featured at some of the most 
-              prestigious venues of New York City in 2025. 
+              prestigious venues of New York City in 2025.
             </p>
 
             <p className="text-lg text-stone-600 mb-6 leading-relaxed">
@@ -130,32 +134,56 @@ export default function App() {
               engineering at local shows and open mics.
             </p>
 
-            <div className="flex flex-wrap gap-4">
-              
-              <div className="bg-gradient-to-r from-stone-100 to-stone-200 rounded-2xl p-6 flex-1 min-w-[140px]">
-                <div className="text-3xl text-stone-700 mb-1">100K+</div>
-                <div className="text-sm text-stone-800">Total Streams</div>
-              </div>
-
-              <div className="bg-gradient-to-r from-green-100 to-green-200 rounded-2xl p-6 flex-1 min-w-[140px]">
-                <div className="text-3xl text-green-700 mb-1">UW</div>
-                <div className="text-sm text-green-900">Proud Husky 🐺</div>
-              </div>
-
-              <div className="bg-gradient-to-r from-blue-100 to-blue-200 rounded-2xl p-6 flex-1 min-w-[140px]">
-                <div className="text-3xl text-blue-700 mb-1">2023</div>
-                <div className="text-sm text-blue-900">Debut Release</div>
-              </div>
-
-            </div>
           </div>
 
+          {/* RIGHT COLUMN */}
           <div className="order-1 md:order-2">
             <img 
               src={portraitPhoto}
               alt="Steven Wang portrait"
               className="w-full h-[400px] object-cover object-[50%_30%] rounded-3xl shadow-2xl"
             />
+          </div>
+
+        </div>
+
+        {/* FULL WIDTH FEATURE TILES */}
+        <div className="grid md:grid-cols-3 gap-6 mb-16">
+
+          <div className="bg-gradient-to-r from-stone-100 to-stone-200 rounded-2xl p-8 min-h-[160px] flex flex-col justify-center shadow-md">
+            
+            <div className="text-2xl md:text-3xl text-stone-700 mb-2">
+              Bilingual Performer
+            </div>
+
+            <div className="text-sm text-stone-800">
+              English & Mandarin Repertoire
+            </div>
+
+          </div>
+
+          <div className="bg-gradient-to-r from-green-100 to-green-200 rounded-2xl p-8 min-h-[160px] flex flex-col justify-center shadow-md">
+            
+            <div className="text-2xl md:text-3xl text-green-700 mb-2">
+              In-House Sound System
+            </div>
+
+            <div className="text-sm text-green-900">
+              Supports up to 250 people
+            </div>
+
+          </div>
+
+          <div className="bg-gradient-to-r from-blue-100 to-blue-200 rounded-2xl p-8 min-h-[160px] flex flex-col justify-center shadow-md">
+            
+            <div className="text-2xl md:text-3xl text-blue-700 mb-2">
+              Instruments & Singers
+            </div>
+
+            <div className="text-sm text-blue-900">
+              Variety available upon request
+            </div>
+
           </div>
 
         </div>
