@@ -11,6 +11,7 @@ import openPhoto from '../assets/opendoorphoto.webp'
 import acapellaPhoto from '../assets/acapella.webp'
 import soloPhoto from '../assets/solo.webp'
 import teashopPhoto from '../assets/teashop.webp'
+import teashopwidePhoto from '../assets/teashopwide.webp'
 import trainPhoto from '../assets/train.webp'
 import blossomPhoto from '../assets/blossom.webp'
 import bagelAudio from '../assets/audio/bagels.mp3'
@@ -436,13 +437,6 @@ export default function App() {
         <div className="mb-16">
           <h2 className="text-4xl mb-8 text-stone-800 text-center">We Love Our Clients!</h2>
           <div className="grid md:grid-cols-1 gap-6">
-            {/* <div className="bg-white rounded-2xl p-8 shadow-lg border-l-4 border-purple-400">
-              <Star className="w-8 h-8 text-purple-500 fill-purple-500 mb-4" />
-              <p className="text-gray-700 mb-4 italic">
-                "Steven's vulnerability and emotional storytelling enchanted our wedding day beyond our wildest dreams."
-              </p>
-              <div className="text-purple-600">— Surayut & Quyyen's Wedding</div>
-            </div> */}
             <div className="bg-white rounded-2xl p-8 shadow-lg border-l-4 border-rose-400">
               <Star className="w-8 h-8 text-rose-500 fill-rose-500 mb-4" />
               <p className="text-gray-700 mb-4 italic">
@@ -454,13 +448,6 @@ Overall, Steven Wang Band exceeded my expectations. They made my birthday party 
               </p>
               <div className="text-rose-600">— CJ Taloza</div>
             </div>
-            {/* <div className="bg-white rounded-2xl p-8 shadow-lg border-l-4 border-violet-400">
-              <Star className="w-8 h-8 text-violet-500 fill-violet-500 mb-4" />
-              <p className="text-gray-700 mb-4 italic">
-                "It's a no-brainer to book Steven for our residents because of his professionalism and uncanny ability to thrill audiences."
-              </p>
-              <div className="text-violet-600">— Theory U District</div>
-            </div> */}
           </div>
         </div>
 
@@ -477,6 +464,45 @@ Overall, Steven Wang Band exceeded my expectations. They made my birthday party 
               <div>
                 <h3 className="text-white text-3xl mb-2">CJ's Birthday</h3>
                 <p className="text-white/90 text-lg">Seattle, WA • July 19, 2025</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Press Quotes Section */}
+        <div className="mb-16">
+          <div className="grid md:grid-cols-1 gap-6">
+            <div className="bg-white rounded-2xl p-8 shadow-lg border-l-4 border-rose-400">
+              <Star className="w-8 h-8 text-rose-500 fill-rose-500 mb-4" />
+              <p className="text-gray-700 mb-4 italic">
+                “We booked Steven twice in 2024 for an evening of entertainment at my shop. He 
+                packed the place both times, the audience loved it, and they were great nights 
+                for the business during our slow summer season, which really helped us out. He 
+                is incredibly professional, easy to talk to, on-time, and his crew and band were 
+                very respectful and professional. I handed everything off to him and his team on 
+                the logistics side of the entertainment - equipment, crew, ticketing - other than 
+                opening the store as per usual. If you are looking for a talented and professional 
+                musician for an evening of entertainment and business, we would highly recommend 
+                booking him.”
+              </p>
+              <div className="text-rose-600">— Daniel Y - Owner of Tea Republik</div>
+            </div>
+          </div>
+        </div>
+
+        {/* Recent Performance Section */}
+        <div className="mb-16">
+          {/* <h2 className="text-4xl mb-8 text-slate-800">Recent Performances</h2> */}
+          <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+            <img 
+              src={teashopwidePhoto}
+              alt="Live performance"
+              className="w-full h-[400px] object-cover object-[50%_15%]"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-8">
+              <div>
+                <h3 className="text-white text-3xl mb-2">Tea Republik</h3>
+                <p className="text-white/90 text-lg">Seattle, WA • August 3, 2024</p>
               </div>
             </div>
           </div>
