@@ -11,6 +11,7 @@ import openPhoto from '../assets/opendoorphoto.webp'
 import acapellaPhoto from '../assets/acapella.webp'
 import soloPhoto from '../assets/solo.webp'
 import teashopPhoto from '../assets/teashop.webp'
+import teashopenhancePhoto from '../assets/teashopenhance.webp'
 import trainPhoto from '../assets/train.webp'
 import blossomPhoto from '../assets/blossom.webp'
 import bagelAudio from '../assets/audio/bagels.mp3'
@@ -494,7 +495,7 @@ Overall, Steven Wang Band exceeded my expectations. They made my birthday party 
           {/* <h2 className="text-4xl mb-8 text-slate-800">Recent Performances</h2> */}
           <div className="relative rounded-3xl overflow-hidden shadow-2xl">
             <img 
-              src={teashopPhoto}
+              src={teashopenhancePhoto}
               alt="Live performance"
               className="w-full h-[400px] object-cover object-[50%_60%]"
             />
