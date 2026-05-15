@@ -255,7 +255,7 @@ export default function App() {
 
                     <div>
                       <h3 className="text-xl text-stone-800">Blueberry Bagels</h3>
-                      <p className="text-sm text-stone-500">2025</p>
+                      <p className="text-sm text-stone-500">2023</p>
                     </div>
                   </div>
 
@@ -315,7 +315,7 @@ export default function App() {
 
                     <div>
                       <h3 className="text-xl text-stone-800">Say You Want Me Too</h3>
-                      <p className="text-sm text-stone-500">2024</p>
+                      <p className="text-sm text-stone-500">2025</p>
                     </div>
                   </div>
 
@@ -383,7 +383,7 @@ export default function App() {
 
                     <div>
                       <h3 className="text-xl text-stone-800">Open The Door</h3>
-                      <p className="text-sm text-stone-500">2024</p>
+                      <p className="text-sm text-stone-500">2023</p>
                     </div>
                   </div>
 
