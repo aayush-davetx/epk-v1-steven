@@ -260,7 +260,7 @@ export default function App() {
 
                   <div className="text-stone-600 text-sm italic mb-6 space-y-1">
                     <p>Written & Performed by Steven Wang</p>
-                    <p>Produced by Amit Amram & Steven Wang</p>
+                    <p>Produced by Amit Amram</p>
                   </div>
                 </div>
 
@@ -314,13 +314,13 @@ export default function App() {
 
                     <div>
                       <h3 className="text-xl text-stone-800">Say You Want Me Too</h3>
-                      <p className="text-sm text-stone-500">2025</p>
+                      <p className="text-sm text-stone-500">2024</p>
                     </div>
                   </div>
 
                   <div className="text-stone-600 text-sm italic mb-6 space-y-1">
                     <p>Written & Performed by Steven Wang</p>
-                    <p>Produced by Amit Amram</p>
+                    <p>Produced by Amit Amram & Steven Wang</p>
                   </div>
                 </div>
 
@@ -382,7 +382,7 @@ export default function App() {
 
                     <div>
                       <h3 className="text-xl text-stone-800">Open The Door</h3>
-                      <p className="text-sm text-stone-500">2025</p>
+                      <p className="text-sm text-stone-500">2024</p>
                     </div>
                   </div>
 
@@ -452,7 +452,7 @@ I had requested two specific songs that are very special to me – “I Love You
 Overall, Steven Wang Band exceeded my expectations. They made my birthday party feel extra special and unforgettable. If you are looking for a professional, talented, and friendly band to make your event come alive, I highly recommend them. I am so grateful for their performance and will definitely be booking them again in the future!
 "
               </p>
-              <div className="text-rose-600">— CJ Tuloza</div>
+              <div className="text-rose-600">— CJ Taloza</div>
             </div>
             {/* <div className="bg-white rounded-2xl p-8 shadow-lg border-l-4 border-violet-400">
               <Star className="w-8 h-8 text-violet-500 fill-violet-500 mb-4" />
@@ -476,7 +476,7 @@ Overall, Steven Wang Band exceeded my expectations. They made my birthday party 
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-8">
               <div>
                 <h3 className="text-white text-3xl mb-2">CJ's Birthday</h3>
-                <p className="text-white/90 text-lg">Seattle, WA • October 26, 2025</p>
+                <p className="text-white/90 text-lg">Seattle, WA • July 19, 2025</p>
               </div>
             </div>
           </div>
@@ -510,7 +510,7 @@ Overall, Steven Wang Band exceeded my expectations. They made my birthday party 
   
             <div className="flex items-center gap-2 bg-white text-slate-700 px-4 py-2 rounded-md text-sm font-medium shadow-sm border border-gray-200 select-text">
               <Mail className="w-5 h-5" />
-              <span className="select-text">stevenwang8801@gmail.com</span>
+              <span className="select-text">steventhewang@gmail.com</span>
             </div>
 
           </div>
